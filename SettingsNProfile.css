@@ -1,0 +1,60 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1 {
+    text-align:center;
+    margin-top: 0.5em;
+}
+
+.flexbox {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.widget {
+    background-color: #EEEBA9;
+            margin: 2%;
+            padding: 10px;
+            border-radius: 10px;
+}
+
+.textbox {
+    background-color: #E74694;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            margin: 0px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+}
+
+.icon {
+    max-width: 2em;
+    max-height: 2em;
+    margin-right: 0.5em;
+}
+
+.navicon {
+    max-width: 3em;
+    max-height: 3em;
+    padding-bottom: 0.7em;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #B4C53B;
+    padding: 10px 0;
+}
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+}
