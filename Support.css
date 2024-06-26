@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E4E5A1;
+    color: #333;
+}
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #DDE78F;
+    padding: 10px;
+}
+.search-container {
+    display: flex;
+    padding: 10px;
+}
+.search-container input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1em;
+}
+.search-container button {
+    background-color: #DDE78F;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+.adjust-supporters {
+    display: flex;
+    padding: 10px;
+}
+.adjust-supporters button {
+    flex: 1;
+    background-color: #DDE78F;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+.support-section {
+    background-color: #E4E5A1;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+.support-item {
+    background-color: #E74694;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.support-item img {
+    margin-right: 10px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #DDE78F;
+    padding: 10px 0;
+}
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.icon {
+    max-width: 2em;
+    max-height: 2em;
+    margin-right: 0.5em;
+}
+
+.navicon {
+    max-width: 3em;
+    max-height: 3em;
+    padding-bottom: 0.7em;
+}
