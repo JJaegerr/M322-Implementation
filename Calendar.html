@@ -3,92 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Calendar.css">
     <title>Calendar</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #E4E5A1;
-            color: #333;
-        }
-        .container {
-            width: 100%;
-            max-width: 400px;
-            margin: 0 auto;
-            background-color: #DDE78F;
-            padding: 10px;
-        }
-        .search-container {
-            display: flex;
-            padding: 10px;
-        }
-        .search-container input {
-            flex: 1;
-            padding: 10px;
-            font-size: 1em;
-        }
-        .search-container button {
-            background-color: #DDE78F;
-            border: none;
-            cursor: pointer;
-            padding: 10px;
-        }
-        .medication-section, .appointments-section {
-            background-color: #E4E5A1;
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 10px;
-        }
-        .medication-item, .appointment-item {
-            background-color: #E74694;
-            color: white;
-            padding: 10px;
-            margin: 5px 0;
-            border-radius: 5px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .calendar-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 0;
-        }
-        .calendar-grid {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            gap: 5px;
-            text-align: center;
-        }
-        .calendar-grid div {
-            padding: 10px 0;
-            border-radius: 5px;
-            background-color: #DDE78F;
-        }
-        .active-day {
-            background-color: #B3C965;
-        }
-        .inactive-day {
-            background-color: #FFFFFF;
-        }
-        .highlight-day {
-            background-color: #E74694;
-            color: white;
-        }
-        .navbar {
-            display: flex;
-            justify-content: space-around;
-            background-color: #DDE78F;
-            padding: 10px 0;
-        }
-        .navbar a {
-            text-decoration: none;
-            color: #333;
-            font-size: 1.2em;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
@@ -173,12 +89,14 @@
             </div>
         </div>
 
-        <div class="navbar">
-            <a href="/index.html">Home</a>
-            <a href="#">Calendar</a>
-            <a href="#">Notifications</a>
-            <a href="/Profile.html">Profile</a>
-        </div>
+        
+    <div class="navbar">
+        <a href="#"><img src="Pictures/Home.png" class="navicon"></a>
+        <a href="#"><img src="Pictures/Calendar.png" class="navicon"></a>
+        <a href="#"><img src="Pictures/Notifications.png" class="navicon"></a>
+        <a href="#"><img src="Pictures/Support.png" class="navicon"></a>
+        <a href="#"><img src="Pictures/PersonalSettings.png" class="navicon"></a>
+    </div>
     </div>
 </body>
 </html>
