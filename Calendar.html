@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #E4E5A1;
+            color: #333;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #DDE78F;
+            padding: 10px;
+        }
+        .search-container {
+            display: flex;
+            padding: 10px;
+        }
+        .search-container input {
+            flex: 1;
+            padding: 10px;
+            font-size: 1em;
+        }
+        .search-container button {
+            background-color: #DDE78F;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+        .medication-section, .appointments-section {
+            background-color: #E4E5A1;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .medication-item, .appointment-item {
+            background-color: #E74694;
+            color: white;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+            text-align: center;
+        }
+        .calendar-grid div {
+            padding: 10px 0;
+            border-radius: 5px;
+            background-color: #DDE78F;
+        }
+        .active-day {
+            background-color: #B3C965;
+        }
+        .inactive-day {
+            background-color: #FFFFFF;
+        }
+        .highlight-day {
+            background-color: #E74694;
+            color: white;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #DDE78F;
+            padding: 10px 0;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" placeholder="Search">
+            <button><img src="filter-icon.png" alt="Filter"></button>
+        </div>
+
+        <div class="medication-section">
+            <h2>Medication <button><img src="add-icon.png" alt="Add"></button></h2>
+            <div class="medication-item">
+                <span>Name of Medication Dose</span>
+                <span>Date Time</span>
+                <input type="checkbox">
+            </div>
+            <div class="medication-item">
+                <span>Name of Medication Dose</span>
+                <span>Date Time</span>
+                <img src="check-icon.png" alt="Check">
+            </div>
+        </div>
+
+        <div class="appointments-section">
+            <h2>Appointments <button><img src="add-icon.png" alt="Add"></button></h2>
+            <div class="appointment-item">
+                <span>Where<br>With whom</span>
+                <span>Date Time</span>
+                <img src="check-icon.png" alt="Check">
+            </div>
+        </div>
+
+        <div class="calendar-section">
+            <div class="calendar-header">
+                <button>2024</button>
+                <button>June</button>
+                <button>Monthly View</button>
+            </div>
+            <div class="calendar-grid">
+                <div>Mo</div>
+                <div>Tu</div>
+                <div>We</div>
+                <div>Th</div>
+                <div>Fr</div>
+                <div>Sa</div>
+                <div>Su</div>
+                <div class="inactive-day">22</div>
+                <div class="inactive-day">27</div>
+                <div class="inactive-day">28</div>
+                <div class="inactive-day">29</div>
+                <div class="inactive-day">30</div>
+                <div class="highlight-day">1</div>
+                <div class="highlight-day">2</div>
+                <div class="active-day">23</div>
+                <div>3</div>
+                <div>4</div>
+                <div class="highlight-day">5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+                <div>13</div>
+                <div>14</div>
+                <div>15</div>
+                <div>16</div>
+                <div>17</div>
+                <div>18</div>
+                <div>19</div>
+                <div>20</div>
+                <div>21</div>
+                <div class="highlight-day">22</div>
+                <div>23</div>
+                <div>24</div>
+                <div>25</div>
+                <div>26</div>
+                <div>27</div>
+                <div>28</div>
+                <div>29</div>
+                <div>30</div>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="#">Calendar</a>
+            <a href="#">Notifications</a>
+            <a href="/Profile.html">Profile</a>
+        </div>
+    </div>
+</body>
+</html>
