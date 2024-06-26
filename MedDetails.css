@@ -1,0 +1,100 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1 {
+    text-align:center;
+    margin-top: 0.5em;
+    font-size: 160%;
+}
+
+.flexbox {
+    display: flex;
+    align-items: center;
+    margin: 2%;
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+.textbox {
+    background-color: #E74694;
+            color: white;
+            width: 90%;
+            padding: 10px;
+            margin: 0px;
+            border-radius: 5px;;
+            margin: 2%;
+            padding: 10px;
+}
+
+.icon {
+    max-width: 5em;
+    max-height: 5em;
+    margin-right: 0.5em;
+}
+
+.navicon {
+    max-width: 3em;
+    max-height: 3em;
+    padding-bottom: 0.2em;
+}
+
+.adjust_icon {
+    max-width: 2em;
+    max-height: 2em;
+    padding-left: 1em;
+}
+
+.arrow_icon{
+    max-width: 3em;
+    max-height: 3em;
+    padding-right: 1em;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #B4C53B;
+    padding: 10px 0;
+    margin-top: 5%;
+}
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.calendar-section {
+    background-color: #E4E5A1;
+    margin: 5%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.day {
+    padding: 5px 0;
+}
+.good {
+    background-color: #B4C53B;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 5px;
+}
+
+.bad {
+    background-color: #E74694;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 5px;
+}
